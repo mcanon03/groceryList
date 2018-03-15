@@ -20,10 +20,19 @@ Frontend: Vue
 
 ## Set up database
 - install
+    - hapi.js: API -- serving software to help make API endpoints 
+        - npm install hapi --save
+
     - knex.js: tool to help write SQL queries/interact with database
         - npm install knex --save
     - postgres: database connection
         - npm install pg --save
-    - hapi.js: API -- serving software to help make API endpoints 
-        - npm install hapi --save
+
+## Start up docker container
+ - docker community edition for mac
+    - set up docker-compose.yml --> config file to pull down postgres db image
+- docker-compose up
+- misc:
+    - docker-compose run (code) --> run in docker container
+
 

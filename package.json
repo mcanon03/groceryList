@@ -8,6 +8,7 @@
   "author": "Marilou Canon",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^5.0.1",
     "hapi": "^17.2.2",
     "knex": "^0.14.4",
     "pg": "^7.4.1"
