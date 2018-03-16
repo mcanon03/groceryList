@@ -1,6 +1,7 @@
 'use strict';
 require('dotenv').config();
 
+// access database
 module.exports = {
     client: 'pg',
     connection: {
