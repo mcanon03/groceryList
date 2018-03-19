@@ -1,6 +1,9 @@
 {
-    "extends": "google",
+    "extends": "@dialexa/eslint-config-dialexa/es6",
     "env": {
         "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 8
     }
 }

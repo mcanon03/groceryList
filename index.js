@@ -8,11 +8,18 @@ const server = new Hapi.Server({
     port: 3000,
 });
 
-// Start the server --> .then = promise, not a callback
-server.start()
-.then(() => {
-    console.log('The server has started. You did it fam!');
-}).catch((err) => {
-    console.log('You dun messed up Aaron', err);
-    throw err;
+// Load routes
+server.register([
+    require('./routes/items'),
+]).then(() => {
+    // Start the server --> .then = promise, not a callback
+    server.start()
+    .then(() => {
+        console.log('The server has started. You did it fam!');
+    }).catch((err) => {
+        console.log('You dun messed up Aaron', err);
+        throw err;
+    });
 });
+
+

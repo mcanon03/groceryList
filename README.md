@@ -48,6 +48,8 @@ Frontend: Vue
 - run seeds
     - knex seed:run
 
+## Set up API routes
+
 - install npm packages:
     - hapi.js: API -- serving software to help make API endpoints 
         - npm install hapi --save

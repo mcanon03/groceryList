@@ -11,10 +11,11 @@
     "dotenv": "^5.0.1",
     "hapi": "^17.2.3",
     "knex": "^0.14.4",
-    "pg": "^7.4.1"
+    "pg": "^7.4.1",
+    "supervisor": "^0.12.0"
   },
   "devDependencies": {
-    "eslint": "^4.18.2",
-    "eslint-config-google": "^0.9.1"
+    "@dialexa/eslint-config-dialexa": "^4.1.1",
+    "eslint": "^4.19.0"
   }
 }
