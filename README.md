@@ -1,6 +1,6 @@
 DB: Postgres
 - Docker container
-- Postico
+- Postico (visually see db)
 API: Hapi
 - PAW
 - Postman
@@ -41,6 +41,12 @@ Frontend: Vue
     - knex migrate:latest
 - rollback latest migration(s)
     - knex migrate:rollback
+
+## Setup seeded data
+- make seed folder
+    - knex seed:make [file name]
+- run seeds
+    - knex seed:run
 
 - install npm packages:
     - hapi.js: API -- serving software to help make API endpoints 

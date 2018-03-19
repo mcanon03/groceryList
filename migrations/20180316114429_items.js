@@ -2,7 +2,7 @@
 
 exports.up = (knex) => {
     return knex.schema.createTable('items', (table) => {
-        table.increment('id').primary();
+        table.increments('id').primary();
         table.string('itemName');
         table.integer('quantity');
         table.string('unit');
