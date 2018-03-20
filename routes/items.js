@@ -20,8 +20,6 @@ exports.plugin = {
             handler: async (request, reply) => {
                 const { itemName, quantity, unit } = request.payload;
                 const newItem = await db('items').insert({ itemName, quantity, unit });
-                console.log('hi');
-                console.log(request.payload);
                 return newItem;
             }
         });
